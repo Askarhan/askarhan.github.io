@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Симулятор президента — игра от ANNUR GAMES / President Simulator</title>
+<meta name="description" content="Симулятор президента — стратегия для Android: возглавьте реальную страну. Экономика, наука, ООН, армия и войны в 3D. Разработчик — ANNUR GAMES.">
+<meta property="og:title" content="Симулятор президента — ANNUR GAMES">
+<meta property="og:description" content="Возглавьте реальную страну: экономика, наука, ООН, армия и войны в 3D">
+<meta property="og:image" content="https://askarhan.github.io/prezident-sim/img/banner.jpg">
+<link rel="icon" href="img/icon.jpg">
+<style>
+  :root { --bg:#0e141c; --panel:#151d28; --ink:#e8e2d0; --muted:#a49d8a; --gold:#c9a24a; --line:#2a3442; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.6 -apple-system, "Segoe UI", Roboto, Arial, sans-serif; }
+  main { max-width:860px; margin:0 auto; padding:20px 16px 56px; }
+  a { color:var(--gold); }
+  nav { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:22px; font-size:14px; }
+  nav a { border:1px solid var(--line); border-radius:6px; padding:5px 12px; text-decoration:none; }
+  nav .brand { border:0; padding-left:0; letter-spacing:.08em; font-weight:700; margin-right:auto; }
+  .hero { display:flex; gap:18px; align-items:center; margin-bottom:20px; }
+  .hero img { width:104px; height:104px; border-radius:22px; border:1px solid var(--line); flex:none; }
+  h1 { color:var(--gold); font-size:28px; line-height:1.2; margin:0; }
+  .sub { color:var(--muted); margin:2px 0 8px; }
+  .tag { margin:0; }
+  .facts { display:flex; flex-wrap:wrap; gap:8px; margin:0 0 20px; padding:0; list-style:none; font-size:14px; }
+  .facts li { background:var(--panel); border:1px solid var(--line); border-radius:999px; padding:4px 12px; color:var(--muted); }
+  .facts b { color:var(--ink); font-weight:600; }
+  .banner { display:block; width:100%; height:auto; border-radius:12px; border:1px solid var(--line); }
+  .shots { display:flex; gap:10px; overflow-x:auto; padding:14px 0 10px; scroll-snap-type:x mandatory; }
+  .shots img { width:min(78vw,520px); height:auto; aspect-ratio:16/9; border-radius:10px; border:1px solid var(--line); scroll-snap-align:start; flex:none; }
+  section { background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:18px 20px; margin-top:18px; }
+  h2 { color:var(--gold); font-size:18px; margin:0 0 8px; }
+  h3 { font-size:14px; letter-spacing:.08em; color:var(--gold); margin:18px 0 4px; }
+  p { margin:0 0 10px; }
+  ul { margin:0; padding-left:20px; }
+  li { margin-bottom:4px; }
+  .note { color:var(--muted); font-size:14px; }
+  dl { display:grid; grid-template-columns:max-content 1fr; gap:6px 16px; margin:0; }
+  dt { color:var(--muted); }
+  dd { margin:0; overflow-wrap:anywhere; }
+  footer { color:var(--muted); font-size:13px; margin-top:22px; text-align:center; }
+  @media (max-width:520px) { .hero img { width:80px; height:80px; border-radius:18px; } h1 { font-size:22px; } }
+</style>
+</head>
+<body>
+<main>
+
+<nav>
+  <a class="brand" href="../">ANNUR GAMES</a>
+  <a href="#en">English</a>
+  <a href="privacy.html">Конфиденциальность</a>
+</nav>
+
+<div class="hero">
+  <img src="img/icon.jpg" alt="Иконка игры «Симулятор президента»" width="104" height="104">
+  <div>
+    <h1>Симулятор президента</h1>
+    <p class="sub">President Simulator · ANNUR GAMES</p>
+    <p class="tag">Возглавьте реальную страну: экономика, наука, ООН, армия и войны в 3D</p>
+  </div>
+</div>
+
+<ul class="facts">
+  <li><b>Платформа:</b> Android</li>
+  <li><b>Жанр:</b> стратегия</li>
+  <li><b>Языки:</b> русский, English</li>
+  <li><b>Статус:</b> готовится к выходу в RuStore</li>
+</ul>
+
+<img class="banner" src="img/banner.jpg" alt="Симулятор президента — баннер игры" width="1024" height="500">
+
+<div class="shots" aria-label="Скриншоты игры">
+  <img src="img/s1.jpg" alt="Скриншот 1" width="1280" height="720" loading="lazy">
+  <img src="img/s2.jpg" alt="Скриншот 2" width="1280" height="720" loading="lazy">
+  <img src="img/s3.jpg" alt="Скриншот 3" width="1280" height="720" loading="lazy">
+  <img src="img/s4.jpg" alt="Скриншот 4" width="1280" height="720" loading="lazy">
+  <img src="img/s5.jpg" alt="Скриншот 5" width="1280" height="720" loading="lazy">
+  <img src="img/s6.jpg" alt="Скриншот 6" width="1280" height="720" loading="lazy">
+</div>
+
+<section id="ru" lang="ru">
+  <h2>Об игре</h2>
+  <p>«Симулятор президента» — стратегия, в которой вы возглавляете реальную страну. Стройте заводы и шахты, собирайте налоги, торгуйте, договаривайтесь с другими странами и командуйте армией.</p>
+
+  <h3>ЭКОНОМИКА</h3>
+  <ul>
+    <li>Ресурсы дают здания: лесопилки, металлургические заводы, нефтяные вышки, рудники, заводы микросхем.</li>
+    <li>Налоги, бюджет, кредиты, пенсии и зарплаты — каждую монету придётся считать.</li>
+    <li>Торговля и сырьевая биржа: ваши грузы идут по карте мира.</li>
+  </ul>
+
+  <h3>НАУКА</h3>
+  <ul>
+    <li>56 исследований в 11 ветках: от геологоразведки до искусственного интеллекта и термоядерного синтеза.</li>
+  </ul>
+
+  <h3>АРМИЯ И ВОЙНА</h3>
+  <ul>
+    <li>Танки, артиллерия, ПВО, авиация, вертолёты и ударные дроны — свои заводы или закупки за рубежом.</li>
+    <li>Фронты на карте мира и трёхмерное поле боя: вы отдаёте приказы, вызываете подкрепления и удары с воздуха.</li>
+    <li>Побеждённые страны присоединяются к вашей, и граница на карте меняется.</li>
+  </ul>
+
+  <h3>ООН И МИРОВАЯ ПОЛИТИКА</h3>
+  <ul>
+    <li>Совет Безопасности голосует за санкции, эмбарго и прекращение огня; постоянные члены могут наложить вето.</li>
+    <li>Военные блоки защищают своих членов. Мир следит за завоевателем.</li>
+    <li>Спецслужбы: агентурная сеть и тайные операции.</li>
+  </ul>
+
+  <h3>МИР ПОД РУКОЙ</h3>
+  <ul>
+    <li>31 крупная держава и 145 малых стран. Шесть путей к победе: военная, экономическая, политическая, идеологическая, научная и «Мир под рукой».</li>
+  </ul>
+
+  <p class="note" style="margin-top:14px">Для игры нужно подключение к интернету. Это игра: она не связана ни с одним правительством или государственной организацией.</p>
+</section>
+
+<section id="en" lang="en">
+  <h2>President Simulator</h2>
+  <p>A strategy game for Android where you lead a real country: build industry, collect taxes, trade, negotiate with other nations, vote in the UN and command your army on a 3D battlefield. 31 major powers, 145 smaller countries and six ways to win.</p>
+  <p class="note">Status: coming to RuStore. This is a game; it is not affiliated with any government or state organization.</p>
+</section>
+
+<section>
+  <h2>Разработчик</h2>
+  <dl>
+    <dt>Студия</dt><dd>ANNUR GAMES</dd>
+    <dt>Почта</dt><dd><a href="mailto:annurgames.gg@gmail.com">annurgames.gg@gmail.com</a></dd>
+    <dt>Telegram</dt><dd><a href="https://t.me/annurgames">t.me/annurgames</a></dd>
+    <dt>Документы</dt><dd><a href="privacy.html">Политика конфиденциальности · Privacy policy</a></dd>
+  </dl>
+</section>
+
+<footer>© 2026 ANNUR GAMES</footer>
+
+</main>
+</body>
+</html>
